@@ -37,6 +37,12 @@
         --duration: 4s;
         animation: domain-fade var(--duration) ease-in-out infinite;
       }
+
+      .banner {
+        max-width: 1000px;
+        width: 100%;
+        display: block;
+      }
       .domain-name div:nth-child(1) { animation-delay: 0s; }
       .domain-name div:nth-child(2) { animation-delay: 1s; }
       .domain-name div:nth-child(3) { animation-delay: 2s; }
