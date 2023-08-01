@@ -1,49 +1,10 @@
+body {
+  background-color: navy;
+  text-align: center;
+}
 
-      header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: var(--header-bg);
-        color: #d8dee9;
-      }
-
-      .domain {
-        display: flex;
-        justify-content: flex-start;
-        letter-spacing: 1px;
-        font-size: 1.5em;
-      }
-      .domain-name {
-        position: relative;
-      }
-
-      @keyframes domain-fade {
-        0% { opacity: 0; }
-        12% { opacity: 1; }
-        25% { opacity: 0; }
-      }
-
-      .domain .name {
-        padding: 0 .3em 3px;
-        transform: translateY(-1px);
-        background-color: #fff;
-        color: var(--accent);
-        font-weight: bold;
-      }
-
-      .domain-name div {
-        opacity: 0;
-        --duration: 4s;
-        animation: domain-fade var(--duration) ease-in-out infinite;
-      }
-
-      .banner {
-        max-width: 1000px;
-        width: 100%;
-        display: block;
-      }
-      .domain-name div:nth-child(1) { animation-delay: 0s; }
-      .domain-name div:nth-child(2) { animation-delay: 1s; }
-      .domain-name div:nth-child(3) { animation-delay: 2s; }
-      .domain-name div:nth-child(4) { animation-delay: 3s; }
+header {
+  background: url('https://images.unsplash.com/photo-1515165562839-978bbcf18277?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') rgb(0%,0%,0%);
+  background-blend-mode: multiply;
+  align-items: center;
+}
