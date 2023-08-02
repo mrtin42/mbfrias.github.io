@@ -2,14 +2,19 @@ html {
   margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+.title {
   color:#fff;
   margin: 0 !important;
+  font-family: "Assistant";
+  font-size: 9rem;
+  font-weight: bold;
 }
 
-p {
+.subtitle {
   color:#fff;
   font-family: Arial;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 body {
@@ -58,6 +63,7 @@ header {
 
 #topbar {
   margin: 0 !important;
+  width: 100%;
 }
 
 #banner {
@@ -65,11 +71,9 @@ header {
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   margin: 0 !important;
-  min-height: 100vh;
-  align-content: center;
+  min-height: 29rem;
+  align-items: end;
   text-align: center;
-  justify-content: center;
   padding: 5rem;
 }
