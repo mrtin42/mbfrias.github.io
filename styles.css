@@ -82,20 +82,23 @@ header {
 }
 
 #banner {
-  background: url(assets/images/bg.png) rgba(0, 0, 0, 0.3);
-  background-blend-mode: overlay;
+  background: url(assets/images/banner.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin: 0 !important;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  vertical-align: middle;
   padding: 5rem;
+  border-radius: 0 !important;
+  max-width: 100%;
+  right: auto;
+  --flex-alignment: center;
+  --indent-left: 1;
+  --indent-right: 1;
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #B86E6E;
   height: 85vh;
-  z-index: -1;
-  alignment: center;
 }
 
 #logo {
