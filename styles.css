@@ -1,5 +1,6 @@
 html {
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -54,7 +55,6 @@ header {
 .navbutton {
   padding: 8px;
   border-radius: 25px;
-  text-decoration: none;
   font-family: sans-serif;
   color: #fff;
 }
@@ -109,4 +109,8 @@ header {
 
 #test {
   height: 100vh;
+}
+
+.button {
+  text-decoration: none;
 }
