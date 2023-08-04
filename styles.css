@@ -5,6 +5,11 @@ html {
   scrollbar-width: none;  /* Firefox */
 }
 
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
 .title {
   color:#fff;
   margin: 0 !important;
@@ -22,6 +27,7 @@ html {
   position: sticky;
   top: 0px;
   border-radius: 30px;
+  box-shadow: 7px 7px 5px #000000;
 }
 
 .logo img {
@@ -85,19 +91,18 @@ html {
 .subtitle {
   color:#fff;
   font-family: Arial;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  font-weight: lighter;
   margin: 0;
 }
 
 body {
-  background: url(assets/images/bg.png) #000000aa;
+  background: url(assets/images/back.jpeg) #000000aa;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
   margin: 0px !important;
-  display: inline;
 }
 
 html::-webkit-scrollbar {
@@ -112,28 +117,69 @@ html::-webkit-scrollbar {
 
 
 
-#banner {
+.banner {
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-#test {
-  height: 100vh;
-  background-color: #333;
+#details {
+  height: 30vh;
+  background-color: #19255a;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+#pfp {
+  text-align: left;
+  width: 20rem;
+  border-radius: 3rem;
+}
+
+#details p {
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: "Assistant";
+  color: #fff;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 1rem;
+}
+
+.links a {
+  color: #999;
+}
+
+.links a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .button {
   text-decoration: none;
 }
 
-#nav {
-
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.badge {
+  border-radius: 1px;
+  margin-left: 2rem;
+  width: 12rem;
 }
 
-#addbutton {
-  text-align: right;
+.discordbadge {
+  width: 9rem;
+  border-radius: 1px;
+  margin-left: 2rem;
+}
+
+.border {
+  width: 100%;
+  height: fit-content;
+  margin: -5px;
+  padding: 0;
 }
