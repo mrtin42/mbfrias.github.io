@@ -8,6 +8,18 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <link rel="icon" href="assets/images/icon.png">
+        <script>
+          if (navigator.userAgent.match(/Android/i) ||
+          navigator.userAgent.match(/webOS/i) ||
+          navigator.userAgent.match(/iPhone/i) ||
+          navigator.userAgent.match(/iPad/i) ||
+          navigator.userAgent.match(/iPod/i) ||
+          navigator.userAgent.match(/BlackBerry/i) ||
+          navigator.userAgent.match(/Windows Phone/i)
+          ) {
+          location.replace("https://m.tub3.uk");
+          }
+        </script>
     </head> 
     <body>
         <div class="headwrap">
@@ -17,7 +29,7 @@
             </div>
             <nav class="navigation">
               <ul>
-                <li><a href="#">projects</a></li>
+                <li><a href="projects/">projects</a></li>
                 <li><a href="#">contact</a></li>
               </ul>
             </nav>
