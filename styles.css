@@ -235,3 +235,42 @@ html::-webkit-scrollbar {
 #statsimg {
   margin-left: 2rem;
 }
+
+#projects {
+  background-color: #142d41;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.project {
+  background-color: #1f3a4d;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project img {
+  width: 20rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.project-title {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.project-details {
+  color: #fff;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 1.75rem;
+}
