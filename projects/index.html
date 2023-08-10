@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="../styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="../assets/images/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="TUBƎ's projects">
@@ -28,26 +29,26 @@
         <meta property="og:locale:alternate" content="es_CL">
     </head>
     <body>
-        <div class="headwrap">
-            <nav class="navbar">
-              <a href="../">
-                <img src="../assets/images/ico.svg" alt="Logo">
-              </a>
-              <div class="navigation">
-                <ul>
-                  <li><a href="#">projects</a></li>
-                  <li><a href="#">contact</a></li>
-                </ul>
-              </div>
-              <div class="button">
-                <a href="#">Button</a>
-              </div>
-            </nav>
+      <nav class="navbar" id="topnav">
+        <a class="navbar-brand" href="../">
+          <img src="../assets/images/ico.svg" alt="Logo">
+        </a>
+        <div class="navbar-mid navitems">
+          <ul>
+            <li><a href="./">projects</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">domains</a></li>
+          </ul>
         </div>
-        <div class="banner" id="about">
+        <div class="navbar-right navitems">
+          <a href="#">Button</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+        <div class="banner" id="i-made">
           <h1 class="title">things ive made</h1>
-        </div>
-        <div>
           <img class="border" src="../assets/design/border_four.svg">
         </div>
         <div id="projects">
@@ -83,6 +84,7 @@
           <br><br>
           <p style="color: aliceblue;">&copy; tube || all lefts reserved</p>
           <br>
-        </div>  
+        </div>
+        <script src="../assets/scripts/hamburger.js"></script> 
     </body>
 </html>

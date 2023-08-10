@@ -30,6 +30,18 @@ h1,h2,h3,h4,h5,h6,p {
   color: #fff;
 }
 
+.threehalfrem {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 842px) {
+  .threehalfrem {
+    font-size: 2rem;
+  }
+}
+
+
+
 .title {
   color:#fff;
   margin: 0 !important;
@@ -50,6 +62,12 @@ h1,h2,h3,h4,h5,h6,p {
   font-family: "Audiowide";
   font-size: 5rem;
   font-weight: lighter;
+}
+
+@media (max-width: 842px) {
+  .projectstitle {
+    font-size: 3rem;
+  }
 }
 
 .navbar {
@@ -237,6 +255,29 @@ html::-webkit-scrollbar {
   background-attachment: fixed;
 }
 
+#i-made {
+  background: url(./assets/images/i-made.jpg) rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 842px) {
+  #intro {
+    background: url(./assets/images/back.jpeg) rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #i-made {
+    background: url(./assets/images/i-made.jpg) rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 #details {
   height: 40vh;
   background-color: #19255a;
@@ -250,10 +291,31 @@ html::-webkit-scrollbar {
   align-items: center;
 }
 
+@media (max-width: 842px) {
+  #details {
+    height: 50vh;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+  }
+}
+
 #pfp {
   text-align: left;
   width: 21rem;
   border-radius: 3rem;
+}
+
+@media (max-width: 842px) {
+  #pfp {
+    display: block;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
 }
 
 #details p {
@@ -264,6 +326,16 @@ html::-webkit-scrollbar {
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
+}
+
+@media (max-width: 842px) {
+  #details p {
+    font-size: 1.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding: 0rem;
+    text-align: center;
+  }
 }
 
 .links a {
@@ -309,6 +381,12 @@ html::-webkit-scrollbar {
   font-size: 2rem;
 }
 
+@media (max-width: 842px) {
+  #continued ul {
+    font-size: 1.5rem;
+  }
+}
+
 #socials {
   text-align: center;
   background-color: #400587;
@@ -327,6 +405,13 @@ html::-webkit-scrollbar {
   text-align: center;
 }
 
+@media (max-width: 842px) {
+  #projects {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .project {
   background-color: #1f3a4d;
   border-radius: 1rem;
@@ -337,10 +422,25 @@ html::-webkit-scrollbar {
   justify-content: space-between;
 }
 
+@media (max-width: 842px) {
+  .project {
+    display: block;
+  }
+}
+
 .project img {
   width: 20rem;
   border-radius: 1rem;
   margin-right: 1rem;
+}
+
+@media (max-width: 842px) {
+  .project img {
+    display: block;
+    width: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .project-title {
@@ -348,11 +448,29 @@ html::-webkit-scrollbar {
   color: #fff;
 }
 
+@media (max-width: 842px) {
+  .project-title {
+    font-size: 2rem;
+  }
+}
+
 .project-details {
   color: #fff;
   text-align: left;
 }
 
+@media (max-width: 842px) {
+  .project-details {
+    text-align: center;
+  }
+}
+
 .project-description {
   font-size: 1.75rem;
+}
+
+@media (max-width: 842px) {
+  .project-description {
+    font-size: 1.25rem;
+  }
 }
