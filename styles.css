@@ -38,6 +38,12 @@ h1,h2,h3,h4,h5,h6,p {
   font-weight: bold;
 }
 
+@media (max-width: 842px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
 .projectstitle {
   color:#fff;
   margin: 0 !important;
@@ -46,40 +52,36 @@ h1,h2,h3,h4,h5,h6,p {
   font-weight: lighter;
 }
 
-.top-bar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #f0f0f0;
   padding: 20px;
-  position: sticky;
-  top: 0px;
-  border-radius: 30px;
-  box-shadow: 7px 7px 5px #000000;
 }
 
-.logo img {
+.navbar img {
   height: 60px; /* Adjust the height as needed */
 }
 
-.navigation {
+.navbar-mid {
   flex-grow: 1;
   text-align: center;
 }
 
-.navigation ul {
+.navbar-mid ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.navigation li {
+.navbar-mid li {
   display: inline-block;
   margin-right: 10px; /* Add spacing between navigation items */
   height: 100%;
 }
 
-.navigation a {
+.navbar-mid a {
   text-decoration: none;
   color: #333333;
   font-family: "Audiowide";
@@ -88,18 +90,18 @@ h1,h2,h3,h4,h5,h6,p {
   transition: all .2s ease-in-out; /* Add transition effect */
 }
 
-.navigation a:hover {
+.navbar-mid a:hover {
   background-color: #333;
   color: #fff;
   border-radius: 40px;
   transform: scale(1.1);
 }
 
-.button {
+.navbar-right {
   text-align: right;
 }
 
-.button a {
+.navbar-right a {
   padding: 8px 16px;
   font-size: 2rem;
   background-color: #333333;
@@ -110,11 +112,73 @@ h1,h2,h3,h4,h5,h6,p {
   transition: all .2s ease-in-out; /* Add transition effect */
 }
 
-.button a:hover {
+.navbar .icon {
+  display: none;
+
+}
+
+.navbar-right a:hover {
   background-color: #f0f0f0;
   color: #333333;
   transform: scale(1.1);
+  text-align: center;
 }
+
+@media (max-width: 842px) {
+  .navitems a {
+    display: none;
+  }
+
+  .navbar-mid .navbar-right {
+    display: block;
+  }
+
+  .navbar-right {
+    text-align: center;
+  }
+
+  .navbar a.icon {
+    display: block;
+    font-size: 2rem;
+    color: #333;
+    padding: 5px;
+  }
+
+  /* hamburger menu hover */
+  .navbar .icon:hover {
+    color: #fff;
+    background-color: #333;
+    border-radius: 30px;
+  }
+
+  .navbar.responsive {
+    position: relative;
+    display: block;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .navbar.responsive .navbar-mid {
+    display: block;
+  }
+
+  .navbar.responsive .navitems a {
+    float: none;
+    display: block;
+  }
+}
+
+@media (min-width: 842px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+  }
+}
+
 
 .subtitle {
   color:#fff;
@@ -122,6 +186,12 @@ h1,h2,h3,h4,h5,h6,p {
   font-size: 2.5rem;
   font-weight: lighter;
   margin: 0;
+}
+
+@media (max-width: 842px) {
+  .subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 #projectssub {
@@ -133,7 +203,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 body {
-  background: url(assets/images/back.jpeg) #000000aa;
+  background: #333;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: bottom;
@@ -156,11 +226,19 @@ html::-webkit-scrollbar {
 .banner {
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-bottom: 0px !important;
+}
+
+#intro {
+  background: url(./assets/images/back.jpeg) rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
 #details {
-  height: 30vh;
+  height: 40vh;
   background-color: #19255a;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -185,7 +263,7 @@ html::-webkit-scrollbar {
   color: #fff;
   margin-left: 2rem;
   margin-right: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .links a {

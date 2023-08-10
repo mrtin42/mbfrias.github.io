@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="assets/images/icon.png">
         <meta name="description" content="TUBƎ's website">
         <meta name="keywords" content="TUBƎ, tube, projects, discord, bot, london, transit, londontransit, tfl, transport, for, london, transport for london, tube, underground, bus, train, tram, dlr, overground, tfl rail">
@@ -40,28 +41,28 @@
         </script>
     </head> 
     <body>
-        <div class="headwrap">
-          <div class="top-bar">
-            <div class="logo">
-              <a href="./"><img src="assets/images/ico.svg" alt="Logo"></a>
-            </div>
-            <nav class="navigation">
+          <nav class="navbar" id="topnav">
+            <a class="navbar-brand" href="./">
+              <img src="./assets/images/ico.svg" alt="Logo">
+            </a>
+            <div class="navbar-mid navitems">
               <ul>
-                <li><a href="projects/">projects</a></li>
+                <li><a href="./projects">projects</a></li>
                 <li><a href="#">contact</a></li>
+                <li><a href="#">domains</a></li>
               </ul>
-            </nav>
-            <div class="button">
+            </div>
+            <div class="navbar-right navitems">
               <a href="#">Button</a>
             </div>
-          </div>
-        </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </nav>
         <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
-        <div class="banner" id="about">
+        <div class="banner" id="intro">
           <h1 class="title">hi, i'm tube.</h1>
           <p class="subtitle">i make programs which usually have some sort of connection to transportation.</p>
-        </div>
-        <div>
           <img class="border" src="assets/design/border_one.svg">
         </div>
         <div id="details">
@@ -70,7 +71,7 @@
           </div>
           <div>
             <p class="links">
-              ✈ 15 year old intermediate developer from chile, living in the uk
+              ✈ 15 year old developer from chile, living in the uk
               <br>
               ✈ creator of your favourite TfL bot on discord, <a href="https://www.londontransit.xyz">LondonTransit</a>
               <br>
@@ -110,6 +111,8 @@
           <br><br>
           <p style="color: aliceblue;">&copy; tube || all lefts reserved</p>
           <br>
-        </div>  
+        </div> 
+        
+      <script src="./assets/scripts/hamburger.js"></script>
     </body>
 </html>
