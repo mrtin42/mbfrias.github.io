@@ -9,6 +9,27 @@ html::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
+#thanksbanner {
+  display: none;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#dismiss {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
 h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   padding: 0;
