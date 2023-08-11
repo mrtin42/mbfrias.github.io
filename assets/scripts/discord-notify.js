@@ -1,27 +1,41 @@
-const axios = require('axios');
-const qs = require('qs');
+const dotenv = require('dotenv')
 
-let data = qs.stringify({
-    'content': 'hi you have a new form message go check it out',
-    'embeds': '',
-    'tts': false
-});
+document.getElementById('myForm').addEventListener('submit', async (event) => {
+    event.preventDefault();
+  
+    const formData = new FormData(event.target);
 
-let config = {
-    method: 'post',
-    url: 'https://discord.com/api/v10/channels/1139283271751057610/messages',
-    headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept': 'application/json',
-        'Authorization': 'MTEzOTIxODA4MzU3MjEwNTMyNw.G_lQOj.PTn5dJLxeLHh5w5-cM2rn_Hm9vIK6gVE5JPY-A'
-    },
-    data: data
-};
+    const dmURL = `https://discord.com/api/v10/users/@me/channels`;
 
-axios.request(config)
-    .then((response) => {
-        console.log(JSON.stringify(response.data));
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+    const sendMessageURL = `https://discord.com/api/v10/channels/${channelID}/messages`;
+
+
+  
+    // Process form data and construct the message
+    const message = `New response:\nName: ${formData.get('name')}\nEmail: ${formData.get('email')}\nMessage: ${formData.get('message')}`;
+  
+    try {
+      // Send message to Discord DM using axios
+      const response = await axios.post(dmURL, { recipient_id: targetUserID }, {
+        headers: {
+          'Authorization': `Bot ${botToken}`,
+          'Content-Type': 'application/json',
+        },
+      });
+  
+      if (response.status === 200) {
+        console.log('Message sent successfully');
+        // Redirect to the thank you page on success
+        window.location.href = 'https://example.com/done';
+      } else {
+        console.error('Failed to send message');
+        // Show an alert for failure
+        window.alert('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error:', error.message);
+      // Show an alert for errors
+      window.alert('An unknown error occurred. Please try again later.');
+    }
+  });
+  
