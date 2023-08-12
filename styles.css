@@ -29,7 +29,6 @@ html::-webkit-scrollbar {
   cursor: pointer;
 }
 
-
 h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   padding: 0;
@@ -283,6 +282,14 @@ html::-webkit-scrollbar {
   background-position: center;
 }
 
+#domainz {
+  background: url(./assets/images/domainz.jpg) rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+
+}
+
 @media (max-width: 842px) {
   #intro {
     background: url(./assets/images/back.jpeg) rgba(0, 0, 0, 0.5);
@@ -532,4 +539,20 @@ html::-webkit-scrollbar {
   border-radius: 1rem;
   padding: 0.5rem;
   margin: 0.5rem;
+}
+
+#domainlist {
+  background-color: #0066FF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 842px) {
+  #domainlist {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } 
 }
