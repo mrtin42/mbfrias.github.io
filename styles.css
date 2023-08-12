@@ -268,10 +268,10 @@ html::-webkit-scrollbar {
 }
 
 #intro {
-  background: url(./assets/images/back.jpeg) rgba(0, 0, 0, 0.5);
+  background: url(./assets/images/intro.jpg) rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -279,7 +279,8 @@ html::-webkit-scrollbar {
   background: url(./assets/images/i-made.jpg) rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-attachment: fixed;
 }
 
 #domainz {
@@ -287,24 +288,26 @@ html::-webkit-scrollbar {
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
-
+  background-attachment: fixed;
 }
 
-@media (max-width: 842px) {
+/* @media (max-width: 842px) {
   #intro {
     background: url(./assets/images/back.jpeg) rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
+    background-attachment: static;
   }
 
   #i-made {
-    background: url(./assets/images/i-made.jpg) rgba(0, 0, 0, 0.5);
+    background: url(./assets/images/i-made-mobile.jpg) rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
+    background-attachment: static;
   }
-}
+} */
 
 #details {
   height: 40vh;
