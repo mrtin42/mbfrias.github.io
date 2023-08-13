@@ -283,11 +283,19 @@ html::-webkit-scrollbar {
   background-attachment: fixed;
 }
 
-#domainz {
-  background: url(./assets/images/domainz.jpg) rgba(0, 0, 0, 0.5);
+#contacter {
+  background: url(./assets/images/contacter.jpg) rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+#domainz {
+  background: url(./assets/images/domainz.jpg) rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: top center;
   background-attachment: fixed;
 }
 
@@ -513,11 +521,29 @@ html::-webkit-scrollbar {
   padding-left: 3rem;
   padding-right: 3rem;
   text-align: center;
+  display: flex;
+}
+
+@media (max-width: 842px) {
+  #contact-details {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+  }
 }
 
 #contact-tube {
   display: block;
   width: 50rem;
+}
+
+@media (max-width: 842px) {
+  #contact-tube {
+    width: 4rem;
+    text-align: center;
+    display: block;
+  }
 }
 
 #contact-tube label {
@@ -529,6 +555,8 @@ html::-webkit-scrollbar {
 @media (max-width: 842px) {
   #contact-tube label {
     font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -542,6 +570,13 @@ html::-webkit-scrollbar {
   border-radius: 1rem;
   padding: 0.5rem;
   margin: 0.5rem;
+}
+
+@media (max-width: 842px) {
+  #contact-tube input,textarea {
+    width: 17rem;
+    text-align: center;
+  }
 }
 
 #domainlist {
@@ -578,4 +613,9 @@ html::-webkit-scrollbar {
 
 .domainhead {
   display: flex;
+}
+
+#contacthow h1 {
+  font-size: 4rem;
+  color: #fff;
 }
