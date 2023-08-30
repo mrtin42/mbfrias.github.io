@@ -267,6 +267,11 @@ html::-webkit-scrollbar {
   margin-bottom: 0px !important;
 }
 
+.mobborder {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
 #intro {
   background: url(./assets/images/intro.jpg) rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
@@ -274,6 +279,14 @@ html::-webkit-scrollbar {
   background-position: top center;
   background-attachment: fixed;
 }
+
+#mobintro {
+  background: url(./assets/images/me.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 
 #i-made {
   background: url(./assets/images/i-made.jpg) rgba(0, 0, 0, 0.5);
@@ -618,4 +631,22 @@ html::-webkit-scrollbar {
 #contacthow h1 {
   font-size: 4rem;
   color: #fff;
+}
+
+.desktoponly {
+  display: block;
+}
+
+.mobileonly {
+  display: none;
+}
+
+@media (max-width: 842px) {
+  .desktoponly {
+    display: none;
+  }
+
+  .mobileonly {
+    display: block;
+  }
 }
