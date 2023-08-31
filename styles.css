@@ -10,7 +10,7 @@ html::-webkit-scrollbar {
 }
 
 nav {
-  z-index: 9999;
+  z-index: 9990;
 }
 
 #thanksbanner {
