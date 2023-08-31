@@ -9,6 +9,10 @@ html::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
+nav {
+  z-index: 9999;
+}
+
 #thanksbanner {
   display: none;
   background-color: #f0f0f0;
