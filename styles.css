@@ -9,10 +9,6 @@ html::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
 
-nav {
-  z-index: 9990;
-}
-
 #thanksbanner {
   display: none;
   background-color: #f0f0f0;
@@ -22,7 +18,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 999;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -100,6 +96,7 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: space-between;
   background-color: #f0f0f0;
   padding: 20px;
+  z-index: 9999;
 }
 
 .navbar img {
