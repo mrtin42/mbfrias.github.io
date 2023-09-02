@@ -268,11 +268,6 @@ html::-webkit-scrollbar {
   margin-bottom: 0px !important;
 }
 
-.mobborder {
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-}
-
 #intro {
   background: url(./assets/images/intro.jpg) rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
@@ -313,12 +308,12 @@ html::-webkit-scrollbar {
   background-attachment: fixed;
 }
 
-/* @media (max-width: 842px) {
+ @media (max-width: 842px) {
   #intro {
     background: url(./assets/images/back.jpeg) rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: static;
   }
 
@@ -326,13 +321,13 @@ html::-webkit-scrollbar {
     background: url(./assets/images/i-made-mobile.jpg) rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: static;
   }
-} */
+}
 
 #details {
-  height: 40vh;
+  padding: 1rem;
   background-color: #19255a;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -346,11 +341,7 @@ html::-webkit-scrollbar {
 
 @media (max-width: 842px) {
   #details {
-    height: 50vh;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     display: block;
   }
 }
@@ -404,6 +395,10 @@ html::-webkit-scrollbar {
   text-decoration: none;
 }
 
+#socials {
+  padding-top: 1rem;
+}
+
 .badge {
   border-radius: 1px;
   margin-left: 0.5rem;
@@ -412,10 +407,15 @@ html::-webkit-scrollbar {
 
 .border {
   width: 100%;
-  height: fit-content;
   margin-bottom: -5px;
   margin-top: -5px;
   padding: 0;
+}
+
+@media (max-width: 842px) {
+  .border {
+    display: none;
+  }
 }
 
 #continued {
@@ -600,6 +600,8 @@ html::-webkit-scrollbar {
   padding-left: 3rem;
   padding-right: 3rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 842px) {
@@ -609,24 +611,61 @@ html::-webkit-scrollbar {
   } 
 }
 
+@media (max-width: 842px) {
+  #domainlist {
+    display: block;
+  }
+}
+
+
+
 .domain {
   background-color: #1f3a4d;
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  align-content: center;
+  justify-content: center;
+  width: 45vw;
+  color: #f2f2f2
 }
 
+@media (max-width: 842px) {
+  .domain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.domaincategory h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "audiowide";
+}
+
+.domainname h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: "Kanit";
+}
+
+.domainname img {
+  width: 40rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+@media (max-width: 842px) {
+  .domaincategory h1 {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 842px) {
   .project {
     display: block;
   }
-}
-
-.domainhead {
-  display: flex;
 }
 
 #contacthow h1 {
