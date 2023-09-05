@@ -10,6 +10,8 @@ function makeCookie(cname, cvalue, exdays) {
     if (getCookie(cname) == "") {
         // create cookie
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        // redirect to home page with new language
+        window.location.replace(`/${cvalue}`);
     } else {
         // if cookie exists, check if it matches the current language
         if (getCookie(cname) != cvalue) {
