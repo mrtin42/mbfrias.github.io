@@ -324,6 +324,16 @@ html::-webkit-scrollbar {
     background-position: center center;
     background-attachment: static;
   }
+
+  #contacter {
+    background: url(./assets/images/contacter-mobile.jpg) rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: static;
+  }
+
+  
 }
 
 #details {
@@ -540,7 +550,10 @@ html::-webkit-scrollbar {
 
 @media (max-width: 842px) {
   #contact-details {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0;
@@ -548,15 +561,14 @@ html::-webkit-scrollbar {
 }
 
 #contact-tube {
-  display: block;
-  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 842px) {
   #contact-tube {
-    width: 4rem;
-    text-align: center;
-    display: block;
   }
 }
 
@@ -593,6 +605,59 @@ html::-webkit-scrollbar {
   }
 }
 
+#contacthow {
+  background-color: #370c5f;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 842px) {
+  #contacthow {
+    margin-top: 1rem;
+  }
+}
+
+#contacthow h1 {
+  text-align: left;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 842px) {
+  #contacthow h1 {
+    text-align: center;
+  }
+}
+
+#contacthow p {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 842px) {
+  #contacthow p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+#contacthow a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Assistant";
+}
+
+#contacthow a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 #domainlist {
   background-color: #0066FF;
   padding-top: 1rem;
@@ -613,7 +678,10 @@ html::-webkit-scrollbar {
 
 @media (max-width: 842px) {
   #domainlist {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -633,9 +701,10 @@ html::-webkit-scrollbar {
 
 @media (max-width: 842px) {
   .domain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* horizontally align boxes to center */
+    display: block;
+    width: 80vw;
+
   }
 }
 
@@ -651,6 +720,42 @@ html::-webkit-scrollbar {
   font-family: "Kanit";
 }
 
+.reallink {
+  color: #fff;
+  background-color: #0066FF;
+  border-radius: 25px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reallink a {
+  text-decoration: none;
+  font-family: 'Assistant';
+  color: #fff;
+}
+
+/* imitate real links */
+
+.fakelink {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Assistant';
+  background-color: #0066FF;
+  border-radius: 25px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+
 .domainname img {
   width: 40rem;
   border-radius: 1rem;
@@ -661,16 +766,17 @@ html::-webkit-scrollbar {
   .domaincategory h1 {
     font-size: 2rem;
   }
+
+  .domainname img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (max-width: 842px) {
   .project {
     display: block;
   }
-}
-
-#contacthow h1 {
-  font-size: 4rem;
-  color: #fff;
 }
 
 .desktoponly {
@@ -689,4 +795,26 @@ html::-webkit-scrollbar {
   .mobileonly {
     display: block;
   }
+}
+
+.tooltip {
+  position: relative; 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 25px;
+  font-family: monospace;
+  width: 120px;
+  bottom: 100%;
+  justify-content: center;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
