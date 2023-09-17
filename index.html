@@ -6,9 +6,9 @@
         <title>TUBƎ</title>
         <link rel="me" href="https://mastodon.social/@mbfr">
         <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:wght@300&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="./assets/images/icon.png">
@@ -28,20 +28,74 @@
         <meta property=“twitter:site” content=“@t_ub3”>
         <meta property=“twitter:creator” content=“@t_ub3”>
         <meta property=“twitter:title” content=“TUBƎ”>
-        <meta property=“twitter:description” content=“TUBƎ's website”>
+        <meta property=“twitter:description” content="TUBƎ's website">
         <meta property="twitter:card" content="summary_large_image">
         <meta property=“twitter:image” content="https://mbfrias.co.uk/assets/images/og.png">
         <meta property="og:image" content="https://mbfrias.co.uk/assets/images/profile.png">
-        <script src="./assets/scripts/installed/makecookie.js"></script>
         <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </head>
     <body>
+    <div class="wrapper">
+      <script src="./assets/scripts/popups.js"></script>
+      <script src="./assets/scripts/smooth.js"></script>
+      <nav class="navbar" id="topnav">
+        <ul class="buttons">
+          <li><a href="./" class="page-link">home</a></li>
+          <li><a href="./projects" class="page-link">projects</a></li>
+          <li><a href="./contact" class="page-link">contact</a></li>
+          <li><a href="./domains" class="page-link">domains</a></li>
+        </ul>
+      </nav>
       <div class="name">
         <h1 class="glitch">
           <span aria-hidden="true">MAЯTÍN</span>
           MAЯTÍN
           <span aria-hidden="true">MAЯTÍN</span>
         </h1>
+        <div class="sectionsbuttons">
+          <button class="sectionopener" id="aboutopener" onclick="showPopup('about')">about</button>
+          <button class="sectionopener" id="skillsopener" onclick="showPopup('skills')">skills</button>
+          <button class="sectionopener" id="wordsopener" onclick="showPopup('words')">testimonials</button>
+        </div>
       </div>
+      <div class="popup" id="about">
+        <div class="popupcontent">
+          <h6 class="about">about</h6>
+          <p class="about">
+            - 15 year old frontend developer from chile living in uk<br>
+            - currently working on <a href="mbfrias.co.uk/londontransit">LondonTransit</a><br>
+            - likes trains and programming and nu metal<br>
+          </p>
+        </div>
+      </div>
+      <div class="popup" id="skills">
+        <div class="popupcontent">
+          <h6 class="skills">skills</h6>
+          <p class="skills">
+            - mainly fluent in node.js, html and css<br>
+            - learning swift because i want to make an ios app kekw (no details for you quite yet<br>
+            - i can speak dns! (expertly knowledgeable in the DNS system)<br>
+          </p>
+        </div>
+      </div>
+      <div class="popup" id="words">
+        <div class="popupcontent">
+          <h6 class="words">testimonials</h6>
+          <p class="words">
+            "martin is a very good developer and i like him" - some random guy on discord<br>
+            "martin ur development skills are so amazing and awesome and they give me great joy i love how you develop so skilfully and your website is awesome" - ven, an eddsworld fan<br>
+            "that's proper splendid" - big pingo, literally him<br>
+            "eat some chocolate chocolate chip" - Joseph Robinette Biden Jr, 46th president of the United States of America<br>
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footercontent">
+          <a href="https://x.com/t_ub3" class="footer"><i class="fa-brands fa-twitter"></i></a> - <a href="https://github.com/mbfrias"><i class="fa-brands fa-twitter"></i></a>
+          <p class="footer">&copy; 2023 mbfrias || all lefts reserved</p>
+          <p class="footer">made with <i class="fa fa-heart"></i> by me</p>
+        </div>
+    </div>
     </body>
 </html>
