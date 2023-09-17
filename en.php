@@ -1,2 +1,2 @@
 <?php
-    header("Locaation: /", true, 301);
+    header("Location: /", true, 301);
