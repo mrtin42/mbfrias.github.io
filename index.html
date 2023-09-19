@@ -33,20 +33,18 @@
         <meta property="og:image" content="https://mbfrias.co.uk/assets/images/profile.png">
         <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://kit.fontawesome.com/4ef43d9822.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3c4e7a03d3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    <div class="wrapper">
-      <script src="./assets/scripts/popups.js"></script>
-      <script src="./assets/scripts/smooth.js"></script>
       <nav class="navbar" id="topnav">
         <ul class="buttons">
-          <li><a href="./" class="page-link">home</a></li>
+          <li><a href="./" class="page-link glitch"><span aria-hidden="true">home</span>home<span aria-hidden="true">home</span></a></li>
           <li><a href="./projects" class="page-link">projects</a></li>
           <li><a href="./contact" class="page-link">contact</a></li>
           <li><a href="./domains" class="page-link">domains</a></li>
         </ul>
       </nav>
+      <div class="wrapper">
       <div class="name">
         <h1 class="glitch">
           <span aria-hidden="true">MAЯTÍN</span>
@@ -67,6 +65,7 @@
             - currently working on <a href="mbfrias.co.uk/londontransit">LondonTransit</a><br>
             - likes trains and programming and nu metal<br>
           </p>
+          <button onclick="closePopup('about')" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
         </div>
       </div>
       <div class="popup" id="skills">
@@ -74,9 +73,10 @@
           <h6 class="skills">skills</h6>
           <p class="skills">
             - mainly fluent in node.js, html and css<br>
-            - learning swift because i want to make an ios app kekw (no details for you quite yet<br>
-            - i can speak dns! (expertly knowledgeable in the DNS system)<br>
+            - learning swift because i want to make an ios app kekw (no details for you quite yet)<br>
+            - i can speak dns! (pretty knowledgeable in the DNS system)<br>
           </p>
+          <button onclick="closePopup('skills')" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
         </div>
       </div>
       <div class="popup" id="words">
@@ -88,14 +88,14 @@
             "that's proper splendid" - big pingo, literally him<br>
             "eat some chocolate chocolate chip" - Joseph Robinette Biden Jr, 46th president of the United States of America<br>
           </p>
+          <button onclick="closePopup('words')" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
         </div>
       </div>
-      <footer class="footer">
-        <div class="footercontent">
-          <a href="https://x.com/t_ub3" class="footer"><i class="fa-brands fa-twitter"></i></a> - <a href="https://github.com/mbfrias"><i class="fa-brands fa-github"></i></a>
-          <p class="footer">&copy; 2023 mbfrias || all lefts reserved</p>
-          <p class="footer">made with <i class="fa fa-heart"></i> by me</p>
-        </div>
-    </div>
+      <div class="viewportspacer">
+        <!-- nothing here -->
+      </div>
+      </div>
+      <script src="./assets/scripts/popups.js"></script>
+      <script src="./assets/scripts/load.js"></script>
     </body>
 </html>

@@ -1,9 +1,10 @@
 body {
-    background: url(./assets/images/_MBF2365.png) rgba(0, 0, 0, 0.8);
-    background-blend-mode: overlay;
+    background: url(./assets/images/bg_v2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    overflow: visible;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -107,9 +108,7 @@ nav {
 /* animated glitching text effect on .glitch */
 
 .glitch {
-    font-size: 5rem;
     font-weight: bold;
-    text-transform: uppercase;
     position: relative;
     text-shadow: 0.05em 0 0 #0000ff, -0.03em -0.04em 0 #ff0000,
       0.025em 0.04em 0 #00ff00;
@@ -172,10 +171,12 @@ nav {
 .popup {
   opacity: 0;
   visibility: hidden;
+  /* fix to bottom but scroll up with page */
   position: fixed;
   width: 100%;
   bottom: -100%;
-  transition: bottom 1s ease-in-out;
+  transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
   z-index: 1000;
   }
 
@@ -224,28 +225,74 @@ nav {
   transition: opacity 0.3s ease-in-out !important; 
 }
 
-.footercontent {
-  color: #fff;
-  font-size: 1rem;
-  font-family: 'Assistant', sans-serif;
+.viewportspacer {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: 'Assistant', sans-serif;
+  color: white;
+}
+
+.header h1 {
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+
+.header p {
+  font-size: 1.5rem;
   margin: 0;
-  padding: 0;
 }
 
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  text-align: center;
+  height: 100%;
+  width: 90%;
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  margin: 2rem;
 
 
-.footercontent a {
-  text-decoration: none;
-  color: #fff;
-  transition: all 0.3s ease;
 }
 
-.footercontent a:hover {
-  color: #f00;
+.project h1 {
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+  font-size: 5rem;
 }
 
+.project p {
+  font-size: 1.5rem;
+  margin: 0;
+}
 
+.project-image {
+  width: 50%
+}
 
+.project-image img {
+  height: auto;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
 
+#wrapper {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out !important;
+}
 
+#wrapper.hide {
+  opacity: 0;
+}
