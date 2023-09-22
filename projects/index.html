@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <title>projects - TUBƎ</title>
         <link rel="stylesheet" href="../styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:wght@300&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap">
+        <link rel="preload" href="../assets/images/bg_v2.png" as="image">
         <link rel="icon" href="../assets/images/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="TUBƎ's projects">
@@ -23,65 +25,49 @@
         <meta property="og:url" content="https://mbfrias.co.uk/projects/">
         <meta property="og:site_name" content="TUBƎ">
         <meta property="og:type" content="website">
+        <meta property=“twitter:site” content=“@t_ub3”>
+        <meta property=“twitter:creator” content=“@t_ub3”>
+        <meta property=“twitter:title” content="projects - TUBƎ">
+        <meta property=“twitter:description” content="TUBƎ's projects">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property=“twitter:image” content="https://mbfrias.co.uk/assets/images/og.png">
+        <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/3c4e7a03d3.js" crossorigin="anonymous"></script>
     </head>
     <body>
       <nav class="navbar" id="topnav">
-        <a class="navbar-brand" href="../">
-          <img src="../assets/images/ico.svg" alt="Logo">
-        </a>
-        <div class="navbar-mid navitems">
-          <ul>
-            <li><a href="./">projects</a></li>
-            <li><a href="../contact/">contact</a></li>
-            <li><a href="../domains">domains</a></li>
-          </ul>
-        </div>
-        <div class="navbar-right navitems">
-          <a href="#">Button</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <ul class="buttons">
+          <li><a href="../" class="page-link">home</a></li>
+          <li><a href="./" class="page-link glitch"><span aria-hidden="true">projects</span>projects<span aria-hidden="true">projects</span></a></li>
+          <li><a href="../contact" class="page-link">contact</a></li>
+          <li><a href="../domains" class="page-link">domains</a></li>
+        </ul>
       </nav>
-        <div class="banner" id="i-made">
-          <h1 class="title">things ive made</h1>
-          <img class="border" src="../assets/design/border_four.svg">
+      <div class="wrapper">
+      <div class="header">
+        <h1 class="glitch">
+          <span aria-hidden="true">my projects</span>
+          my projects
+          <span aria-hidden="true">my projects</span>
+        </h1>
+        <p>in case you didnt know, i like to code stuff</p>
+      </div>
+      <div class="projects">
+        <div class="project">
+          <div class="project-image">
+            <img src="../assets/images/londontransit.png" alt="londontransit">
+          </div>
+          <div class="project-info">
+            <h2>LondonTransit</h2>
+            <p>LondonTransit is a Discord bot that provides live TfL service information, including tube, bus, DLR, Overground, TfL Rail, tram, river, and cable car. It also provides TfL journey planning, and live Santander Cycle availability.</p>
+            <div class="project-buttons">
+              <a href="https://mbfrias.co.uk/londontransit" class="button" target="_blank">website</a>
+              <a href="https://discord.com/oauth2/authorize?client_id=738988609976209745&scope=bot&permissions=8" class="button" target="_blank">invite</a>
+          </div>
         </div>
-        <div id="projects">
-            <div class="project">
-              <div>
-                <img src="../assets/images/lt.png" alt="Logo">
-              </div>
-              <div class="project-details">
-                <h2 class="project-title fontass">LondonTransit</h2>
-                <p class="project-description fontass">LondonTransit is a Discord bot that provides information about the London Underground, Overground, DLR, TfL Rail, Tram, River Bus, Emirates Air Line, Santander Cycles and London Buses.</p>
-              </div>
-            </div>
-            <div class="project">
-              <div>
-                <img src="../assets/images/icon.png" alt="Logo">
-              </div>
-              <div class="project-details">
-                <p class="fontaudi" style="color: brown; font-size: 1rem;">coming soon</p>
-                <h2 class="project-title fontass">SocialSVG</h2>
-                <p class="project-description fontass">A collection of social logos to embed in your own website or GitHub README.md files, subtracting messy files image files from your repository.</p>
-              </div>
-            </div>
-        </div>
-        <div>
-          <img class= "border" src="../assets/design/border_five.svg">
-        </div>
-        <div id="socials">
-          <a class="badge" href="https://github.com/t-ub3"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-          <a class="badge" href="https://twitter.com/t_ub3"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
-          <a class="badge" href="https://discord.gg/2Y9Y9zX"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
-          <a class="badge" href="https://www.youtube.com/@t_ub3"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
-          <a class="badge" href="https://www.instagram.com/tubee.dev/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-          <br><br>
-          <p style="color: aliceblue;">&copy; tube || all lefts reserved</p>
-          <br>
-        </div>
-        <script src="../assets/scripts/hamburger.js"></script> 
-        <script src="../assets/scripts/parallax.js"></script>
+      </div>
+      <p>hmm, its a bit empty here...</p>
+      </div>
     </body>
 </html>
