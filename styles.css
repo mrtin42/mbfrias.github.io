@@ -81,7 +81,13 @@ nav {
     padding: 0;
 }
 
-.sectionopener, .contactbutton {
+@media screen and (max-width: 768px) {
+    .name h1 {
+        font-size: 4.5rem;
+    }
+}
+
+.sectionopener, .contactbutton, #submit {
     border: 2px solid #fff;
     border-radius: 6%;
     background: transparent;
@@ -95,14 +101,32 @@ nav {
     transition: all 0.3s ease;
 }
 
-.name button:hover {
+.sectionopener:hover, .contactbutton:hover {
     background: #fff;
     color: #000;
     font-size: 1.6rem;
 }
 
-.name button:active {
+#submit:hover {
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+
+.sectionopener:active, .contactbutton:active, #submit:active {
     transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+    .sectionsbuttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        top: 0;
+    }
 }
 
 /* animated glitching text effect on .glitch */
@@ -247,6 +271,12 @@ nav {
   font-size: 5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 4.5rem;
+  }
+}
+
 .header p {
   font-size: 1.5rem;
   margin: 0;
@@ -264,6 +294,15 @@ nav {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .projects {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+}
+
 .project {
   display: flex;
   justify-content: center;
@@ -277,12 +316,25 @@ nav {
   border: 2px solid #fff;
   border-radius: 1rem;
   padding: 1.5rem;
+}
 
-
+@media (max-width: 768px) {
+  .project {
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 .project-info h1 {
   font-size: 5rem;
+}
+
+@media (max-width: 768px) {
+  .project-info h1 {
+    font-size: 4.5rem;
+  }
 }
 
 .project-info p {
@@ -293,6 +345,13 @@ nav {
   width: 30rem;
   border-radius: 1rem;
   margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  .project-image img {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .project-buttons a {
