@@ -6,9 +6,11 @@
         <title>TUBƎ</title>
         <link rel="me" href="https://mastodon.social/@mbfr">
         <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:wght@300&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap">
+        <link rel="preload" href="../assets/images/bg_v2.png" as="image">
         <link rel="icon" href="./assets/images/icon.png">
         <meta name="description" content="TUBƎ's website">
         <meta name="keywords" content="TUBƎ, tube, projects, discord, bot, london, transit, londontransit, tfl, transport, for, london, transport for london, tube, underground, bus, train, tram, dlr, overground, tfl rail">
@@ -26,91 +28,75 @@
         <meta property=“twitter:site” content=“@t_ub3”>
         <meta property=“twitter:creator” content=“@t_ub3”>
         <meta property=“twitter:title” content=“TUBƎ”>
-        <meta property=“twitter:description” content=“TUBƎ's website”>
+        <meta property=“twitter:description” content="TUBƎ's website">
         <meta property="twitter:card" content="summary_large_image">
         <meta property=“twitter:image” content="https://mbfrias.co.uk/assets/images/og.png">
         <meta property="og:image" content="https://mbfrias.co.uk/assets/images/profile.png">
-        <script src="./assets/scripts/installed/makecookie.js"></script>
         <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
-    </head> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://kit.fontawesome.com/3c4e7a03d3.js" crossorigin="anonymous"></script>
+    </head>
     <body>
-          <nav class="navbar" id="topnav">
-            <a class="navbar-brand" href="./">
-              <img src="./assets/images/ico.svg" alt="Logo">
-            </a>
-            <div class="navbar-mid navitems">
-              <ul>
-                <li><a href="./projects">projects</a></li>
-                <li><a href="./contact">contact</a></li>
-                <li><a href="./domains">domains</a></li>
-              </ul>
-            </div>
-            <div class="navbar-right navitems">
-              <a href="./es">en español</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </nav>
-        <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
-        <div class="banner" id="intro">
-          <h1 class="title">hi, i'm martin.</h1>
-          <p class="subtitle">you probably know me online as tube</p>
-          <img class="border" src="./assets/design/border_one.svg">
+      <nav class="navbar" id="topnav">
+        <ul class="buttons">
+          <li><a href="./" class="page-link glitch"><span aria-hidden="true">home</span>home<span aria-hidden="true">home</span></a></li>
+          <li><a href="./projects" class="page-link">projects</a></li>
+          <li><a href="./contact" class="page-link">contact</a></li>
+          <li><a href="./domains" class="page-link">domains</a></li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+      <div class="name">
+        <h1 class="glitch">
+          <span aria-hidden="true">MAЯTÍN</span>
+          MAЯTÍN
+          <span aria-hidden="true">MAЯTÍN</span>
+        </h1>
+        <div class="sectionsbuttons">
+          <button class="sectionopener" id="aboutopener" onclick="showPopup('about')">about</button>
+          <button class="sectionopener" id="skillsopener" onclick="showPopup('skills')">skills</button>
+          <button class="sectionopener" id="wordsopener" onclick="showPopup('words')">testimonials</button>
         </div>
-        <div id="details">
-          <div>
-            <img id="pfp" src="./assets/images/profilephoto.png">
-          </div>
-          <div>
-            <p class="links">
-              - 15 year old developer from chile, living in the uk
-              <br>
-              - creator of your favourite TfL bot on discord, <a href="https://www.londontransit.xyz">LondonTransit</a>
-              <br>
-              - very obsessed with trains, metal and 2tone ska
-            </p>
-          </div>
+      </div>
+      <div class="popup" id="about">
+        <div class="popupcontent">
+          <h6 class="about">about</h6>
+          <p class="about">
+            - 15 year old frontend developer from chile living in the uk<br>
+            - currently working on <a href="mbfrias.co.uk/londontransit">LondonTransit</a><br>
+            - likes trains and programming and nu metal<br>
+          </p>
+          <button onclick="closePopup('about')" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <div>
-          <img class="border" src="./assets/design/border_two.svg">
+      </div>
+      <div class="popup" id="skills">
+        <div class="popupcontent">
+          <h6 class="skills">skills</h6>
+          <p class="skills">
+            - mainly fluent in node.js, html and css<br>
+            - learning swift because i want to make an ios app kekw (no details for you quite yet)<br>
+            - quite smart when it comes to the domain name system<br>
+            - suprisingly knowledgable in british transport<br>
+          </p>
+          <button onclick="closePopup('skills')" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <div id="continued">
-          <h2 class="projectstitle">stuff i use to make stuff</h2>
-          <h2 class="fontass threehalfrem"><span class="hightlight">languages</span></h2>
-          <ul>
-            <li class="fontass">javascript (mostly)</li>
-            <li class="fontass">html</li>
-            <li class="fontass">css</li>
-            <li class="fontass">python (for school only)</li>
-          </ul>
-          <h2 class="fontass threehalfrem"><span class="highlight">hardware</span></h2>
-          <ul>
-            <li class="fontass">macbook pro 13" 2022 (m1 soac)</li>
-            <li class="fontass">iphone 11 (sometimes when no laptop D:)</li>
-          </ul>
-          <h2 class="fontass threehalfrem"><span class="highlight">software</span></h2>
-           <ul>
-            <li class="fontass">visual studio code</li>
-            <li class="fontass">sublime text</li>
-            <li class="fontass">postman (for apis)</li>
-           </ul>
+      </div>
+      <div class="popup" id="words">
+        <div class="popupcontent">
+          <h6 class="words">testimonials</h6>
+          <p class="words">
+            "martin is a very good developer and i like him" - some random guy on discord<br>
+            "martin ur development skills are so amazing and awesome and they give me great joy i love how you develop so skilfully and your website is awesome" - ven, an eddsworld fan<br>
+            "that's proper splendid" - big pingo, literally him<br>
+            "eat some chocolate chocolate chip" - Joseph Robinette Biden Jr, 46th president of the United States of America<br>
+          </p>
+          <button onclick="closePopup('words')" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <div>
-          <img class="border" src="./assets/design/border_three.svg">
-        </div>
-        <div id="socials">
-          <a class="badge" href="https://github.com/t-ub3"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
-          <a class="badge" href="https://twitter.com/t_ub3"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>
-          <a class="badge" href="https://discord.gg/2Y9Y9zX"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"></a>
-          <a class="badge" href="https://www.youtube.com/@t_ub3"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
-          <a class="badge" href="https://www.instagram.com/tubee.dev/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-          <br><br>
-          <p style="color: aliceblue;">&copy; tube || all lefts reserved</p>
-          <br>
-        </div> 
-        
-      <script src="./assets/scripts/hamburger.js"></script>
-      <script src="./assets/scripts/parallax.js"></script>
+      </div>
+      <div class="viewportspacer">
+        <!-- nothing here -->
+      </div>
+      </div>
+      <script src="./assets/scripts/popups.js"></script>
     </body>
 </html>
