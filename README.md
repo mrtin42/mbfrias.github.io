@@ -8,8 +8,5 @@ i code this site myself. zero external dependencies.
 
 ## Hosting
 
-###### mbfrias.co.uk
-[github pages](https://pages.github.com/)
-
-###### tub3.uk, tub3.tech,
-[vercel](https://vercel.com/)
+###### Cloudflare Pages
+[Cloudflare Pages](https://pages.cloudflare.com/) free, fast and not owned by stupid microsoft.
