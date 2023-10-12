@@ -21,6 +21,74 @@ body {
     scrollbar-width: none; /* Firefox */
 }
 
+#referrerbanner.bannerhidden {
+    display: none;
+}
+
+#referrerbanner {
+    position: fixed;
+    background-color: #000;
+    z-index: 99999999999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    color: white;
+    padding: 0.5rem;
+}
+
+#referrerbanner p {
+    margin: 0.25rem;
+    padding: 0;
+}
+
+#referrerbanner a { 
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#referrerbanner a:hover {
+    text-decoration: none;
+}
+
+#referrerbanner button {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #fff;
+    border-radius: 6%;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#referrerbanner button:hover {
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+}
+
+#referrerbanner button:active {
+    transform: scale(0.9);
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 nav {
     margin: 0;
     padding: 0;
