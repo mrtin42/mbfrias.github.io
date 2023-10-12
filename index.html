@@ -35,24 +35,8 @@
         <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://kit.fontawesome.com/3c4e7a03d3.js" crossorigin="anonymous"></script>
-        <script id="referrerbannerscript">
-          // Get the URL parameters
-          const urlParams = new URLSearchParams(window.location.search);
-
-          // Check if the "source" parameter is set to the shortening service
-          if (urlParams.get("redir_source") === "mvrtin" || urlParams.get("redir_source") === "mbfrme") {
-            document.getElementById("referrerbanner").style.display = "block";
-          } else {
-            document.getElementById("referrerbanner").style.display = "none";
-          }
-
-        </script>
     </head>
-    <body>
-      <div id="referrerbanner">
-        the URL you used to get here is my url shortener made possible by <a href="https://dub.co">dub.co</a>. Check it out!
-        <button onclick="document.getElementById('referrerbanner').style.display = 'none';" class="closePopup"><i class="fa-solid fa-xmark"></i></button>
-      </div>      
+    <body>    
       <nav class="navbar" id="topnav">
         <ul class="buttons">
           <li><a href="./" class="page-link glitch"><span aria-hidden="true">home</span>home<span aria-hidden="true">home</span></a></li>
