@@ -35,6 +35,12 @@
         <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://kit.fontawesome.com/3c4e7a03d3.js" crossorigin="anonymous"></script>
+        <script id="referrerbanner">
+          var referrer = document.referrer;
+          if (referrer.includes("google") || referrer.includes("bing") || referrer.includes("yahoo") || referrer.includes("duckduckgo") || referrer.includes("baidu") || referrer.includes("yandex") || referrer.includes("ask") || referrer.includes("aol") || referrer.includes("naver") || referrer.includes("sogou") || referrer.includes("exalead") || referrer.includes("qwant") || referrer.includes("yippy") || referrer.includes("gigablast") || referrer.includes("info") || referrer.includes("wow") || referrer.includes("webcrawler") || referrer.includes("infospace") || referrer.includes("excite") || referrer.includes("lycos") || referrer.includes("contenko") || referrer.includes("dogpile") || referrer.includes("search") || referrer.includes("startpage") || referrer.includes("searchencrypt") || referrer.includes("ecosia") || referrer.includes("swisscows") || referrer.includes("gibiru") || referrer.includes("searchlock") || referrer.includes("peekier") || referrer.includes("yippy")) {
+            document.write('<div class="referrerbanner"><p>you came from a search engine, didn\'t you?</p></div>');
+          }
+        </script>
     </head>
     <body>
       <nav class="navbar" id="topnav">
