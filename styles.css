@@ -19,11 +19,7 @@ body::-webkit-scrollbar {
 body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-}
-
-#referrerbanner.bannerhidden {
-    display: none;
-}
+} 
 
 #referrerbanner {
     position: fixed;
