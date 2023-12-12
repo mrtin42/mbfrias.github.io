@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="../styles.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:wght@300&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap">
-      <link rel="preload" href="../assets/images/bg_v2.png" as="image">
-      <link rel="icon" href="../assets/images/icon.png">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="TUBƎ's projects">
-      <meta name="keywords" content="TUBƎ, tube, projects, discord, bot, london, transit, londontransit, tfl, transport, for, london, transport for london, tube, underground, bus, train, tram, dlr, overground, tfl rail, rail, river, emirates air line, cable car, santander, cycle, hire, bike, bicycle, river bus, taxi">
-      <meta name="author" content="TUBƎ">
-      <meta name="robots" content="index, follow">
-      <meta name="revisit-after" content="1 days">
-      <meta name="language" content="English">
-      <meta name="generator" content="TUBƎ">
-      <meta name="theme-color" content="#286a8c">
-      <meta property="og:title" content="projects - TUBƎ">
-      <meta property="og:description" content="TUBƎ's projects">
-      <meta property="og:image" content="https://mbfrias.co.uk/assets/images/profile.png">
-      <meta property="og:url" content="https://mbfrias.co.uk/projects/">
-      <meta property="og:site_name" content="TUBƎ">
-      <meta property="og:type" content="website">
-      <meta property=“twitter:site” content=“@t_ub3”>
-      <meta property=“twitter:creator” content=“@t_ub3”>
-      <meta property=“twitter:title” content="projects - TUBƎ">
-      <meta property=“twitter:description” content="TUBƎ's projects">
-      <meta property="twitter:card" content="summary_large_image">
-      <meta property=“twitter:image” content="https://mbfrias.co.uk/assets/images/og.png">
-      <meta property=“twitter:image:src” content=“https://mbfrias.co.uk/assets/images/og.png”>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://kit.fontawesome.com/3c4e7a03d3.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact - TUBƎ</title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+        <link rel="icon" href="../assets/images/icon.png">
+        <meta name="description" content="talk with TUBƎ if you want/need">
+        <meta name="keywords" content="TUBƎ, tube, projects, discord, bot, london, transit, londontransit, tfl, transport, for, london, transport for london, tube, underground, bus, train, tram, dlr, overground, tfl rail">
+        <meta name="author" content="TUBƎ">
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="1 days">
+        <meta name="language" content="English">
+        <meta name="generator" content="TUBƎ">
+        <meta name="theme-color" content="#286a8c">
+        <meta property="og:title" content="contact">
+        <meta property="og:description" content="talk with TUBƎ if you want/need">
+        <meta property="og:image" content="https://mbfrias.co.uk/assets/images/profile.png">
+        <meta property="og:url" content="https://mbfrias.co.uk/contact">
+        <meta property="og:site_name" content="TUBƎ">
+        <meta property="og:type" content="website">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src=“../assets/scripts/mobile-move.js”></script> 
     </head>
     <body>
+        <div id="thanksbanner" class="hidden">
+          <p>message sent woohoo! i should get back to you soon :D</p>
+          <button id="dismiss">X</button>
+        </div>
         <nav class="navbar" id="topnav">
-          <ul class="buttons">
-            <li><a href="../" class="page-link">home</a></li>
-            <li><a href="../projects" class="page-link">projects</a></li>
-            <li><a href="./" class="page-link glitch"><span aria-hidden="true">contact</span>contact<span aria-hidden="true">contact</span></a></li>
-            <li><a href="../domains" class="page-link">domains</a></li>
-          </ul>
+            <a class="navbar-brand" href="../">
+              <img src="../assets/images/ico.svg" alt="Logo">
+            </a>
+            <div class="navbar-mid navitems">
+              <ul>
+                <li><a href="../projects">projects</a></li>
+                <li><a href="./">contact</a></li>
+                <li><a href="../domains">domains</a></li>
+              </ul>
+            </div>
+            <div class="navbar-right navitems">
+              <a href="#">Button</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
         </nav>
-        <div class="wrapper">
-        <div class="header">
-          <h1 class="glitch">
-            <span aria-hidden="true">contact me</span>
-            contact me
-            <span aria-hidden="true">contact me</span>
-          </h1>
-          <p>if you want to get in touch, you can use the form below or the details below that</p>
+        <div class="banner" id="contacter">
+            <h1 class="title">contact me</h1>
+            <p class="subtitle">complain and chatter if you want/need</p>
+            <img class="border" src="../assets/design/border_six.svg">
         </div>
         <div id="contact-details">
             <div id="form">
@@ -62,22 +66,23 @@
                     <input type="text" id="subject" name="subject" placeholder="have you seen the new fnaf trailer?"><br>
                     <label for="message">message<br></label>
                     <textarea id="message" name="message" placeholder="waffle waffle waffle..." style="height:200px"></textarea><br>
-                    <input id="submit" type="submit" value="Submit">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
             <div id="contacthow">
-                <h1 class="fontaudi">elsehow</h1>
-                <div id="inlinecontactbuttons">
-                  <button onclick="window.open('mailto:martin@mbfrias.co.uk', '_blank')" class="contactbutton"><i class="fas fa-envelope"></i> email</button>
-                  <button onclick="window.open('https://mbf.fyi/twt', '_blank')" class="contactbutton"><i class="fab fa-twitter"></i> twitter</button>
-                  <button onclick="window.open(' https://mbf.fyi/dc', '_blank')" class="contactbutton"><i class="fab fa-discord"></i> discord</button>
-                </div>
-            </div>
-        </div>
-        </div>x
-        <div id="thanksbanner" class="hidden">
-          <p>message sent woohoo! i should get back to you soon :D</p>
-          <button id="dismiss">X</button>
+                <h1 class="fontaudi">details</h1>
+                <p class="fontass">email: <a href="mailto:martin@mbfrias.co.uk">martin@mbfrias.co.uk</a>
+                  <br>
+                  discord: <a href="https://link.tubee.dev/discord">tu.be</a>
+                  <br>
+                  twitter: <a href="https://link.tubee.dev/x">t_ub3</a>
+                  <br>
+                  --
+                  <br>
+                  or use the form lol
+                </p>
+
+
         </div>
         <script src="../assets/scripts/hamburger.js"></script>
         <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
